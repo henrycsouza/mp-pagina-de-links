@@ -1,0 +1,17 @@
+{
+    "name": "Marcia  Santos",
+    "avatar": "./img/photo.svg",
+    "description": "Criadora de Conteúdo, escritora e professora de história. Conheça o meu trabalho",
+    "links": [
+        {"title": "Livro: o cotidiano do Brasil", "url": "https://www.amazon.com.br/Cotidiano-Brasileiro-No-S%C3%A9culo-XVI/dp/8506024846"},
+        {"title": "Meu último vídeo", "url": "https://www.youtube.com/shorts/_CMzSeP6lus"},
+        {"title": "Portfólio", "url": "#"},
+        {"title": "Agenda", "url": "https://play.google.com/store/apps/details?id=com.google.android.calendar&hl=pt_BR&pli=1"}
+    ],
+
+    "socialLinks": [
+        {"platform": "linkedin", "url": "#"},
+        {"platform": "instagram", "url": "#"},
+        {"platform": "facebook", "url": "#"}
+    ]
+}

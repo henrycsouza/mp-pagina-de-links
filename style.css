@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-image: url("./img/background");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Arvo", serif;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  width: 90%;
+  max-width: 420px;
+  padding: 30px 20px;
+  border: 3px solid #3c5335;
+  border-radius: 20px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  opacity:0;
+  transform: translateY (20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+
+.card.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.photo-persona {
+  width: 142px;
+  height: 142px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.card h1 {
+  font-size: 32px;
+  color: #3c5335;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.card strong {
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 20px;
+  color: #000000;
+  font-weight: 400;
+  padding: 20px;
+}
+
+.btn_links {
+  width: 100%;
+}
+
+.btn_links a {
+  display: block;
+  width: 80%;
+  padding: 12px 0;
+  background-color: #3c5335;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 15px auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px rgb(196, 255, 178);
+  transition: all 0.3s ease;
+}
+
+.btn_links a:hover {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+.redes_sociais {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 25px;
+}
+
+.redes_sociais a{
+    transition: transform 0.3s ease;
+}
+
+.redes_sociais a:hover{
+    transform: translateY(-5px);
+}
+
+.redes_sociais img {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.redes_sociais img:hover{
+    transform: scale(1.2);
+}
+
+@media(max-width: 480px){
+    .card{
+        width: 90%;
+        max-width: 420px;
+        padding: 20px;
+    }
+
+    .photo-persona{
+        width:110px;
+        height:110px;
+    }
+
+    .card h1{
+        font-size: 24px;
+    }
+
+    .card p{
+        font-size: 16px;
+    }
+
+    .btn_links a{
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .redes_sociais{
+        gap:20px;
+    }
+}
+
+
+@media (prefers-color-scheme:dark){
+    .card {
+        background-color: rgba(30, 30, 30, 0.8);
+        border-color: #8bc34a;
+        color: #fff;
+    }
+
+    .card h1 {
+        color: #8bc34a;
+    }
+
+    .card p{
+        color: #fff;
+    }
+
+    .btn_links a{
+        background-color: #8bc34a;
+        color:#000;
+    }
+
+    .btn_links a:hover{
+        background-color: #6fa636;
+    }
+}
